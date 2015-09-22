@@ -1,0 +1,26 @@
+chromedriver+xvfb
+https://github.com/keyvanfatehi/docker-chrome-xvfb
+
+selenium
+https://github.com/SeleniumHQ/docker-selenium
+
+
+
+
+
+
+
+
+
+
+
+lxc setup
+lxc-create -t ubuntu-cloud -n live
+
+
+install git ppa nodejs xvfb couchdb avahi
+sudo curl -f http://npmjs.org/install.sh | sh
+
+//avahi erkennt 
+https://www.npmjs.com/package/node-discovery
+https://github.com/agnat/node_mdns 
