@@ -1,9 +1,15 @@
-chromedriver+xvfb
-https://github.com/keyvanfatehi/docker-chrome-xvfb
+chromedriver+xvfb+selenium
+Docker:
+sudo docker run -d -p 4444:4444 --name selenium selenium/standalone-chrome
 
-selenium
-https://github.com/SeleniumHQ/docker-selenium
 
+Picker (AngularJS SPA)
+
+
+Server (NodeJS+Websocket)
+
+
+CouchApp+DB
 
 
 
