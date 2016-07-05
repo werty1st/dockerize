@@ -1,32 +1,13 @@
-chromedriver+xvfb+selenium
-Docker:
-sudo docker run -d -p 4444:4444 --name selenium selenium/standalone-chrome
+CouchApp+DB (ok)
+
+xvfb+selenium+chromedriver (ok)
 
 
-Picker (AngularJS SPA)
+Picker
+->simple html histroy modul
+->HTML5 creator app
 
 
-Server (NodeJS+Websocket)
+Server (render, histroy, search, rerender)
 
 
-CouchApp+DB
-
-
-
-
-
-
-
-
-
-
-lxc setup
-lxc-create -t ubuntu-cloud -n live
-
-
-install git ppa nodejs xvfb couchdb avahi
-sudo curl -f http://npmjs.org/install.sh | sh
-
-//avahi erkennt 
-https://www.npmjs.com/package/node-discovery
-https://github.com/agnat/node_mdns 
