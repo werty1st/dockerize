@@ -1,11 +1,11 @@
 #!/bin/bash
 
-sudo docker pull klaemo/couchdb:latest
+docker pull klaemo/couchdb:latest
 
 # expose it to the world on port 5984 and use your current directory as the CouchDB Database directory
-sudo docker run --rm -d -p 5984:5984 -e COUCHDB_USER=admin -e COUCHDB_PASSWORD=s00fa -v $(pwd)/db_files:/usr/local/var/lib/couchdb --name couchdb klaemo/couchdb
+docker run --restart=always -p 5984:5984 --env-file docker_env -v $(pwd)/db_files:/usr/local/var/lib/couchdb --name couchdb klaemo/couchdb
 
-docker run -d -p 5984:5984 -e COUCHDB_USER=admin -e COUCHDB_PASSWORD=pass --name couchdb klaemo/couchdb
+
 
 
 #funktioniert nicht. fehlt die DB
